@@ -13,13 +13,23 @@ Ele consolida:
 
 Se houver conflito entre documentos, a ADR aceita prevalece.
 
+## Estrutura de repositórios
+
+O ecossistema Orbit é dividido em três repositórios:
+
+* `orbit-docs` - documentação oficial, backlog, ADRs e contratos
+* `orbit-web` - aplicação frontend
+* `api` - backend Laravel
+
+Este documento vive em `orbit-docs` e descreve os contratos e a arquitetura de todo o sistema.
+
 ---
 
 # 1. Visão Geral
 
 ## Objetivo do sistema
 
-O Orbit é uma plataforma web de finanças pessoais para organizar contas, importar transações, categorizar despesas e receitas, acompanhar metas, visualizar indicadores financeiros e apoiar decisões do usuário com clareza e segurança.
+Orbit é uma plataforma web de finanças pessoais para organizar contas, importar transações, categorizar despesas e receitas, acompanhar metas, visualizar indicadores financeiros e apoiar decisões do usuário com clareza e segurança.
 
 O foco do sistema é fornecer uma base robusta, realista e escalável para uso em produção, com domínio financeiro bem modelado e experiência consistente.
 
@@ -96,7 +106,7 @@ O foco do sistema é fornecer uma base robusta, realista e escalável para uso e
    - Reduzem custo de manutenção de design system inicial.
 
 4. Zod + React Hook Form.
-   - Umifica validação, schema e tipagem de formulários.
+   - Unifica validação, schema e tipagem de formulários.
    - Facilita reuso entre frontend e contratos.
 
 5. TanStack Query.
@@ -112,7 +122,7 @@ O foco do sistema é fornecer uma base robusta, realista e escalável para uso e
 
 8. Sanctum.
    - Adequado para autenticação com cookies seguros e integração com Laravel.
-   - Ajuda a manter o refresh token em HttpOnly cookie.
+   - O access token é mantido em memória no frontend e o refresh token permanece em HttpOnly cookie.
 
 9. Recharts.
    - Suficiente para dashboards financeiros do MVP sem introduzir complexidade desnecessária.
@@ -372,7 +382,7 @@ O refresh token permanece em cookie HttpOnly, invisível ao JavaScript.
 Fluxo esperado:
 
 1. usuário autentica
-2. backend valida e emite sessão/token conforme decisão oficial
+2. backend valida e emite a sessão/token conforme decisão oficial
 3. frontend armazena apenas o mínimo necessário em memória
 4. requisições autenticadas usam interceptor ou wrapper de API
 5. em caso de expiração, o frontend aciona refresh

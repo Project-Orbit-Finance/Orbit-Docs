@@ -79,6 +79,7 @@ Entregar uma base funcional e confiável para:
 * múltiplas moedas completas
 * exportação para Excel/PDF
 * artigos próprios de educação financeira
+* importação automática de OFX
 
 ## Critério geral de conclusão do roadmap
 
@@ -88,3 +89,7 @@ O roadmap será considerado concluído quando:
 * o deploy estiver definido e documentado
 * a documentação técnica estiver consistente com a implementação
 * as funcionalidades fora do MVP estiverem registradas como futuras
+
+## Observação sobre planejamento
+
+O item “Planejamento” do `PROJECT.md` deve ser entendido como parte da evolução das metas financeiras, não como um módulo separado do MVP.

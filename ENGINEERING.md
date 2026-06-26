@@ -143,7 +143,9 @@ Componentes apenas:
 
 # Custom Hooks
 
-Toda regra de negócio deve ficar em hooks.
+Hooks devem concentrar a orquestração das features no frontend.
+
+Regras de negócio puras e cálculos determinísticos devem ficar em módulos de domínio, `utils/` ou services específicos, conforme a arquitetura oficial.
 
 Exemplo:
 
@@ -165,6 +167,8 @@ Hooks são responsáveis por:
 * transformação de dados
 * filtros
 * paginação
+
+Quando um cálculo fizer parte da regra central do produto, ele deve ser isolado para facilitar testes e reuso, evitando acoplamento excessivo ao hook.
 
 ---
 

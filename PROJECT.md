@@ -40,7 +40,7 @@ Pessoas que desejam organizar sua vida financeira sem depender de planilhas.
 
 # Stack
 
-Frontend
+## Frontend
 
 * React
 * TypeScript
@@ -53,7 +53,7 @@ Frontend
 * Zustand
 * Recharts
 
-Backend
+## Backend
 
 * Laravel
 * PHP 8.3
@@ -61,21 +61,29 @@ Backend
 * Laravel Sanctum
 * Swagger/OpenAPI
 
-Infraestrutura
+## Infraestrutura
 
 * Vercel
 * Railway
 * Supabase
 
+## Estrutura de repositórios
+
+O projeto é mantido em três repositórios:
+
+* `orbit-docs` - documentação oficial, backlog, ADRs, arquitetura e contratos
+* `orbit-web` - frontend React
+* `api` - backend Laravel e banco de dados
+
 ---
 
 # Arquitetura
 
-Frontend
+## Frontend
 
 Feature Based Architecture
 
-Backend
+## Backend
 
 Controller
 
@@ -118,11 +126,8 @@ Nenhum Controller deve acessar o banco diretamente.
 Importação de:
 
 * CSV
-* OFX
 
 O sistema deverá validar os arquivos antes da importação.
-
----
 
 ## Transações
 
@@ -137,8 +142,6 @@ Campos mínimos
 * conta
 * tipo
 * observação
-
----
 
 ## Categorização
 
@@ -174,8 +177,6 @@ O usuário poderá alterar a categoria manualmente.
 
 As alterações servirão como aprendizado para futuras importações.
 
----
-
 ## Dashboard Financeiro
 
 Gráficos:
@@ -191,8 +192,6 @@ Filtros
 * período
 * categoria
 * conta
-
----
 
 ## Metas
 
@@ -217,8 +216,6 @@ O sistema deverá calcular:
 * economia mensal necessária
 * previsão de conclusão
 
----
-
 ## Planejamento
 
 Permitir planejamento de:
@@ -230,7 +227,7 @@ Permitir planejamento de:
 * celular
 * qualquer objetivo financeiro
 
----
+Observação: o planejamento pode ser modelado como parte do fluxo de metas financeiras no MVP, sem criar um módulo separado.
 
 ## Simulador
 
@@ -249,8 +246,6 @@ Exibir
 * evolução mensal
 * gráfico
 
----
-
 ## Notificações
 
 Alerta para:
@@ -259,8 +254,6 @@ Alerta para:
 * metas atrasadas
 * orçamento excedido
 * lembretes personalizados
-
----
 
 ## Educação Financeira
 
@@ -274,7 +267,7 @@ No futuro poderá possuir artigos próprios.
 
 # Segurança
 
-* JWT em memória
+* Access Token em memória
 * Refresh Token HttpOnly
 * HTTPS obrigatório
 * Rate Limiting
@@ -283,6 +276,8 @@ No futuro poderá possuir artigos próprios.
 * Proteção CSRF
 * RLS no banco
 * Nenhuma informação sensível em logs
+
+Observação: o access token é emitido pelo backend e mantido apenas em memória no frontend. O refresh token permanece em cookie HttpOnly.
 
 ---
 
