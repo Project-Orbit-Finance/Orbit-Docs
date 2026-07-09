@@ -105,6 +105,7 @@ Estrutura base de pastas.
   * **Documentação relacionada:** `ENGINEERING.md`
   * **Critérios de aceitação:** baseline de qualidade definido.
   * **Definition of Done:** checklist oficial pronto para uso no desenvolvimento.
+  * **Status:** Concluída
 
 ## Épico 3 — Contratos iniciais
 

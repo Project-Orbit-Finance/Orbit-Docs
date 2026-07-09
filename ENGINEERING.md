@@ -556,6 +556,34 @@ Nenhum commit deve ser realizado com erros.
 
 ---
 
+# Baseline de Validação
+
+## Objetivo
+
+Definir a sequência mínima de validação técnica que deve ser seguida sempre que uma entrega tocar o frontend ou o backend.
+
+## Frontend
+
+Ordem recomendada:
+
+1. `npm run lint`
+2. `npm run test`
+3. `npm run build`
+
+## Backend
+
+Ordem recomendada:
+
+1. `php artisan test`
+2. `php artisan pint`
+3. `phpstan analyse`
+
+## Regra geral
+
+Nenhuma entrega deve ser considerada concluída enquanto os comandos aplicáveis ao escopo da tarefa não forem executados com sucesso e sem erros relevantes.
+
+---
+
 # Git
 
 Branch principal
