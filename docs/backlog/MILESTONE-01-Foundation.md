@@ -61,6 +61,7 @@ Nenhuma.
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** camadas base disponíveis para implementação futura.
   * **Definition of Done:** estrutura criada e alinhada ao padrão oficial.
+  * **Status:** Concluída
 
 ## Épico 2 — Base técnica
 
