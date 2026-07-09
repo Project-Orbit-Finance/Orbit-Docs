@@ -307,6 +307,37 @@ Nunca duplicar validações.
 
 ---
 
+# Schemas do Frontend
+
+## Regra principal
+
+Schemas devem ficar dentro da feature correspondente sempre que representarem regras, validações ou contratos específicos daquele domínio.
+
+## Estrutura recomendada
+
+* `src/features/<feature>/schemas/` para schemas específicos da feature
+* `src/shared/` apenas para schemas verdadeiramente reutilizáveis entre features
+
+## Convenções
+
+* nomear schemas com o nome da entidade ou ação que validam
+* manter arquivos pequenos e específicos
+* separar schemas de criação, edição, filtro e resposta quando a diferença de regra justificar
+* preferir um schema por responsabilidade clara, evitando arquivos genéricos demais
+
+## Exemplos
+
+* `create-transaction.schema.ts`
+* `update-goal.schema.ts`
+* `transaction-filters.schema.ts`
+* `auth.schema.ts`
+
+## Regra de reuso
+
+Quando dois ou mais domínios precisarem da mesma validação, o schema deve ser promovido para `shared` apenas se continuar neutro e realmente reutilizável.
+
+---
+
 # Organização do Código
 
 Uma função deve fazer apenas uma coisa.

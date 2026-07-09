@@ -138,6 +138,7 @@ Base técnica.
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** padrão de schemas descrito sem ambiguidade.
   * **Definition of Done:** documentação suficiente para implementar formulários com consistência.
+  * **Status:** Concluída
 
 * **ID:** F01.03.02
   * **Título:** Definir padrão de resposta da API
