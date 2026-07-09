@@ -94,6 +94,7 @@ Estrutura base de pastas.
   * **Documentação relacionada:** `ENGINEERING.md`
   * **Critérios de aceitação:** padrões claros e rastreáveis.
   * **Definition of Done:** convenções documentadas e utilizáveis por qualquer dev.
+  * **Status:** Concluída
 
 * **ID:** F01.02.02
   * **Título:** Definir baseline de validação

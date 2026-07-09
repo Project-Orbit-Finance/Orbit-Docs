@@ -123,6 +123,75 @@ Tudo que estiver em `shared` deve ser reutilizável.
 
 ---
 
+# Convenções de Nomenclatura
+
+## Frontend
+
+### Diretórios
+
+* `app/` para composição global da aplicação
+* `features/` para domínios de negócio isolados
+* `shared/` para código realmente reutilizável
+
+### Arquivos e pastas
+
+* componentes em PascalCase quando representarem arquivos específicos de componente
+* hooks com prefixo `use`
+* services com sufixo `Service`
+* schemas com o nome da feature ou da entidade
+* types com o nome do domínio ou da feature
+
+### Exemplos
+
+* `useTransactions`
+* `useGoals`
+* `TransactionService`
+* `GoalService`
+* `transaction.schema.ts`
+* `goal.types.ts`
+
+## Backend
+
+### Diretórios
+
+* `Controllers` para entradas HTTP
+* `Services` para regras de negócio
+* `Repositories` para persistência
+* `Requests` para validação de entrada
+* `Policies` para autorização
+* `Resources` para resposta da API
+* `Models` para entidades persistidas
+
+### Classes
+
+* Controllers devem usar o sufixo `Controller`
+* Services devem usar o sufixo `Service`
+* Repositories devem usar o sufixo `Repository`
+* Requests devem usar o sufixo `Request`
+* Policies devem usar o sufixo `Policy`
+* Resources devem usar o sufixo `Resource`
+* Models devem usar nomes no singular
+
+### Exemplos
+
+* `AuthController`
+* `TransactionService`
+* `TransactionRepository`
+* `StoreTransactionRequest`
+* `TransactionPolicy`
+* `TransactionResource`
+* `Transaction`
+
+## Regras gerais
+
+* nomes devem ser descritivos e consistentes
+* evitar abreviações não óbvias
+* manter singular para entidades e plural para coleções ou pastas de agrupamento
+* manter o mesmo termo para o mesmo conceito em todo o projeto
+* não usar nomes genéricos como `Helper` ou `Manager` sem justificativa clara
+
+---
+
 # Componentes React
 
 Cada componente deve possuir apenas uma responsabilidade.
