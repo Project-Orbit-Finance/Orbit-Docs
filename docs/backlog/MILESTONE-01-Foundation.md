@@ -39,6 +39,7 @@ Nenhuma.
   * **Documentação relacionada:** `ARCHITECTURE.md`, `ROADMAP.md`
   * **Critérios de aceitação:** diretórios e documentos-base criados e acessíveis.
   * **Definition of Done:** estrutura consistente com a arquitetura oficial e sem arquivos faltantes para o milestone.
+  * **Status:** Concluída
 
 * **ID:** F01.01.02
   * **Título:** Organizar diretórios do frontend
@@ -49,6 +50,7 @@ Nenhuma.
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** estrutura base pronta para criação de features.
   * **Definition of Done:** diretórios principais criados sem lógica de negócio.
+  * **Status:** Concluída
 
 * **ID:** F01.01.03
   * **Título:** Organizar diretórios do backend
@@ -143,4 +145,3 @@ Base técnica.
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** payloads e erros padronizados.
   * **Definition of Done:** contrato base compreensível para frontend e backend.
-
