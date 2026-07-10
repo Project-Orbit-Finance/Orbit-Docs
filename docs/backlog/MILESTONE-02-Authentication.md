@@ -75,6 +75,7 @@ Foundation.
   * **Título:** Definir endpoint de logout
   * **Descrição:** estruturar invalidação de sessão e limpeza de cookie.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F02.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`

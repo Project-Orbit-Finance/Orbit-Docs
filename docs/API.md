@@ -301,6 +301,12 @@ Encerra a sessão do usuário.
 
 Requer access token válido.
 
+### Comportamento esperado
+
+* invalida a sessão ativa no backend
+* remove o cookie `HttpOnly` associado ao refresh token, quando existir
+* encerra a sessão sem expor dados adicionais ao frontend
+
 ### Request
 
 Sem body obrigatório.
