@@ -366,6 +366,14 @@ Não requer autenticação.
 
 ### Request
 
+Campos obrigatórios:
+
+* `email`
+
+Regras de validação:
+
+* `email` deve ser um endereço válido
+
 ```json
 {
   "email": "joao@example.com"
@@ -397,6 +405,20 @@ Redefine a senha usando token de recuperação.
 Não requer autenticação.
 
 ### Request
+
+Campos obrigatórios:
+
+* `token`
+* `email`
+* `password`
+* `password_confirmation`
+
+Regras de validação:
+
+* `token` deve ser fornecido e ser válido
+* `email` deve ser um endereço válido
+* `password` deve respeitar a política de senha definida pelo backend
+* `password_confirmation` deve ser igual a `password`
 
 ```json
 {

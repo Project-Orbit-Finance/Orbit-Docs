@@ -127,6 +127,7 @@ Login e logout.
   * **Título:** Definir fluxo de solicitação de reset
   * **Descrição:** estruturar request para solicitação de recuperação.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Requests/*`, `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -137,6 +138,7 @@ Login e logout.
   * **Título:** Definir fluxo de redefinição
   * **Descrição:** documentar validação do token e atualização da senha.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F02.04.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`, `app/Services/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
