@@ -615,6 +615,63 @@ Nenhuma entrega deve ser considerada concluída enquanto os comandos aplicáveis
 
 ---
 
+# Respostas da API
+
+## Objetivo
+
+Padronizar o formato das respostas retornadas pelo backend para simplificar consumo pelo frontend, documentação e testes.
+
+## Envelope de sucesso
+
+Respostas de sucesso devem seguir o formato:
+
+```json
+{
+  "data": {},
+  "message": "Success"
+}
+```
+
+## Envelope de lista
+
+Respostas de coleção devem seguir o formato:
+
+```json
+{
+  "data": [],
+  "meta": {
+    "current_page": 1,
+    "per_page": 15,
+    "total": 0,
+    "last_page": 0
+  }
+}
+```
+
+## Envelope de erro
+
+Erros de validação ou de regra devem seguir o formato:
+
+```json
+{
+  "message": "Validation failed",
+  "errors": {
+    "field": ["The field is required."]
+  }
+}
+```
+
+## Regras
+
+* usar `data` para o conteúdo principal
+* usar `meta` apenas para informações auxiliares de paginação ou contexto
+* usar `message` para resumo legível por humanos
+* usar `errors` para erros de validação estruturados
+* manter consistência entre endpoints de autenticação, listagem e mutação
+* não misturar envelopes diferentes para o mesmo tipo de resposta
+
+---
+
 # Git
 
 Branch principal

@@ -149,3 +149,4 @@ Base técnica.
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** payloads e erros padronizados.
   * **Definition of Done:** contrato base compreensível para frontend e backend.
+  * **Status:** Concluída
