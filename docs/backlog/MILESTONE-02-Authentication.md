@@ -45,6 +45,7 @@ Foundation.
   * **Título:** Criar service de cadastro
   * **Descrição:** registrar usuário e aplicar regras de criação.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Auth/*`, `app/Repositories/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`

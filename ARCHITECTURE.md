@@ -685,6 +685,28 @@ Regras:
 5. Backend emite a sessão/token conforme a estratégia oficial.
 6. Frontend redireciona para a área autenticada.
 
+### Service de cadastro
+
+O caso de uso de cadastro deve ficar concentrado em um `AuthService` ou serviço equivalente de autenticação.
+
+Responsabilidades:
+
+* receber os dados validados pelo `Request`
+* normalizar entradas mínimas antes da persistência
+* verificar existência prévia de e-mail
+* criar o usuário por meio do `Repository`
+* aplicar hash de senha no backend
+* devolver o usuário criado e os artefatos de autenticação definidos pela arquitetura
+
+Regras:
+
+* o controller não deve conter regra de negócio
+* o `Request` é responsável apenas por validação e autorização contextual
+* o `Service` não deve conhecer detalhes de transporte HTTP
+* o `Repository` não deve aplicar regra de criação além da persistência
+
+Essa divisão mantém o fluxo previsível, testável e consistente com a arquitetura oficial.
+
 ## Login
 
 1. Usuário envia e-mail e senha.
