@@ -45,7 +45,7 @@ Foundation.
   * **Título:** Implementar service de cadastro
   * **Descrição:** criar o service responsável por registrar usuário e aplicar regras de criação.
   * **Prioridade:** Alta
-  * **Status:** Pendente
+  * **Status:** Concluída
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Auth/*`, `app/Repositories/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -64,7 +64,7 @@ Foundation.
   * **Título:** Implementar endpoint de login
   * **Descrição:** criar request, controller e fluxo de autenticação do login.
   * **Prioridade:** Alta
-  * **Status:** Pendente
+  * **Status:** Concluída
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`, `app/Http/Requests/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -75,7 +75,7 @@ Foundation.
   * **Título:** Implementar endpoint de logout
   * **Descrição:** criar o endpoint responsável por invalidar a sessão e limpar o cookie.
   * **Prioridade:** Alta
-  * **Status:** Pendente
+  * **Status:** Concluída
   * **Dependências:** F02.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -108,7 +108,7 @@ Login e logout.
   * **Título:** Implementar fluxo de refresh
   * **Descrição:** criar a renovação de access token via cookie HttpOnly.
   * **Prioridade:** Alta
-  * **Status:** Pendente
+  * **Status:** Concluída
   * **Dependências:** F02.02.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`, `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ADR-001.md`
@@ -127,7 +127,7 @@ Login e logout.
   * **Título:** Implementar solicitação de reset
   * **Descrição:** criar request e endpoint para solicitação de recuperação.
   * **Prioridade:** Alta
-  * **Status:** Pendente
+  * **Status:** Concluída
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Requests/*`, `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -138,7 +138,7 @@ Login e logout.
   * **Título:** Implementar redefinição de senha
   * **Descrição:** criar a validação do token e a atualização final da senha.
   * **Prioridade:** Alta
-  * **Status:** Pendente
+  * **Status:** Concluída
   * **Dependências:** F02.04.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`, `app/Services/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
