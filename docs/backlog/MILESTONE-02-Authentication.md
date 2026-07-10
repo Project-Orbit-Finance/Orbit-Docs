@@ -64,6 +64,7 @@ Foundation.
   * **Título:** Definir endpoint de login
   * **Descrição:** estruturar request e response do login.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`, `app/Http/Requests/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`

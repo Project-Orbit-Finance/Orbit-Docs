@@ -220,6 +220,16 @@ Não requer autenticação.
 
 ### Request
 
+Campos obrigatórios:
+
+* `email`
+* `password`
+
+Regras de validação:
+
+* `email` deve ser um endereço válido
+* `password` deve ser uma string não vazia
+
 ```json
 {
   "email": "joao@example.com",
