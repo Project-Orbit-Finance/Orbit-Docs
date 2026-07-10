@@ -34,6 +34,7 @@ Foundation.
   * **Título:** Definir request de cadastro
   * **Descrição:** estruturar validações mínimas de nome, e-mail e senha.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F01.03.02
   * **Arquivos que provavelmente serão modificados:** `app/Http/Requests/*`, `docs/backlog/ROADMAP.md`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -137,4 +138,3 @@ Login e logout.
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** redefinição de senha claramente descrita.
   * **Definition of Done:** fluxo final pronto para implementação.
-

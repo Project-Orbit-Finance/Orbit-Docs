@@ -163,6 +163,20 @@ Não requer autenticação.
 
 ### Request
 
+Campos obrigatórios:
+
+* `name`
+* `email`
+* `password`
+* `password_confirmation`
+
+Regras de validação:
+
+* `name` deve ser texto não vazio
+* `email` deve ser válido e único
+* `password` deve respeitar a política de senha definida pelo backend
+* `password_confirmation` deve ser igual a `password`
+
 ```json
 {
   "name": "João Silva",
