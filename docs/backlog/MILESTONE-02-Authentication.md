@@ -108,6 +108,7 @@ Login e logout.
   * **Título:** Definir fluxo de refresh
   * **Descrição:** documentar renovação de access token via cookie HttpOnly.
   * **Prioridade:** Alta
+  * **Status:** Concluída
   * **Dependências:** F02.02.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`, `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ADR-001.md`

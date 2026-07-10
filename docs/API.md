@@ -270,6 +270,13 @@ Renova o access token usando o refresh token armazenado em cookie HttpOnly.
 
 Requer cookie refresh válido.
 
+### Comportamento esperado
+
+* valida o refresh token recebido automaticamente pelo navegador
+* emite um novo access token
+* renova o refresh token quando a política de sessão exigir
+* mantém o refresh token fora do alcance do JavaScript
+
 ### Request
 
 Sem body obrigatório.
