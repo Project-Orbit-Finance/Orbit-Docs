@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Definir a arquitetura de notificações básicas do Orbit.
+Implementar a arquitetura de notificações básicas do Orbit.
 
 ## Dependências
 
@@ -27,15 +27,15 @@ Transações e metas.
 
 ### Feature 8.1 — Tipos de alerta
 
-**Objetivo:** definir o escopo das notificações do MVP.  
+**Objetivo:** implementar o escopo das notificações do MVP.  
 **Descrição:** organizar alertas por regra de negócio.  
 **Critérios de aceitação:** tipos de alerta documentados.
 
 #### Tasks
 
 * **ID:** F08.01.01
-  * **Título:** Definir eventos geradores de notificação
-  * **Descrição:** documentar quais condições criam notificações.
+  * **Título:** Implementar eventos geradores de notificação
+  * **Descrição:** criar quais condições geram notificações.
   * **Prioridade:** Média
   * **Dependências:** F06.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -60,18 +60,17 @@ Eventos definidos.
 ### Feature 8.2 — Caixa de notificações
 
 **Objetivo:** organizar modelo e comportamento da lista de notificações.  
-**Descrição:** definir persistência, leitura e status.  
+**Descrição:** implementar persistência, leitura e status.  
 **Critérios de aceitação:** fluxo de notificação compreensível.
 
 #### Tasks
 
 * **ID:** F08.02.01
-  * **Título:** Definir contrato de notificação
-  * **Descrição:** documentar campos, prioridade e status de leitura.
+  * **Título:** Implementar contrato de notificação
+  * **Descrição:** criar campos, prioridade e status de leitura.
   * **Prioridade:** Média
   * **Dependências:** F08.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** contrato estável.
   * **Definition of Done:** modelo de notificação pronto para implementação.
-

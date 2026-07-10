@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Definir e preparar a base de dados agregada e os contratos necessários para o dashboard financeiro.
+Implementar a base de dados agregada e os contratos necessários para o dashboard financeiro.
 
 ## Dependências
 
@@ -13,7 +13,7 @@ Definir e preparar a base de dados agregada e os contratos necessários para o d
 
 ### Descrição
 
-Preparar a lógica de obtenção dos indicadores principais do usuário.
+Implementar a lógica de obtenção dos indicadores principais do usuário.
 
 ### Objetivo
 
@@ -25,15 +25,15 @@ Autenticação e base técnica.
 
 ### Feature 3.1 — KPIs do dashboard
 
-**Objetivo:** definir os indicadores oficiais.  
-**Descrição:** organizar métricas e origem dos dados.  
+**Objetivo:** implementar os indicadores oficiais.  
+**Descrição:** criar métricas e origem dos dados.  
 **Critérios de aceitação:** KPIs descritos e priorizados.
 
 #### Tasks
 
 * **ID:** F03.01.01
-  * **Título:** Definir contrato dos KPIs
-  * **Descrição:** documentar quais indicadores o dashboard exibirá.
+  * **Título:** Implementar contrato dos KPIs
+  * **Descrição:** criar a definição dos indicadores que o dashboard exibirá.
   * **Prioridade:** Alta
   * **Dependências:** F01.03.02
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`, `docs/backlog/ROADMAP.md`
@@ -42,8 +42,8 @@ Autenticação e base técnica.
   * **Definition of Done:** contrato de dashboard definido.
 
 * **ID:** F03.01.02
-  * **Título:** Definir origem dos dados do dashboard
-  * **Descrição:** documentar a relação entre transações, contas, categorias e metas.
+  * **Título:** Implementar origem dos dados do dashboard
+  * **Descrição:** criar o mapeamento entre transações, contas, categorias e metas.
   * **Prioridade:** Alta
   * **Dependências:** F03.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -55,7 +55,7 @@ Autenticação e base técnica.
 
 ### Descrição
 
-Preparar agregações que serão usadas pelo frontend e pelos gráficos.
+Implementar agregações que serão usadas pelo frontend e pelos gráficos.
 
 ### Objetivo
 
@@ -68,14 +68,14 @@ KPI definidos.
 ### Feature 3.2 — Consultas agregadas
 
 **Objetivo:** estruturar consultas de leitura do dashboard.  
-**Descrição:** definir agregações por período, conta e categoria.  
+**Descrição:** implementar agregações por período, conta e categoria.  
 **Critérios de aceitação:** consultas previsíveis e documentadas.
 
 #### Tasks
 
 * **ID:** F03.02.01
-  * **Título:** Definir agregação de saldo
-  * **Descrição:** documentar como o saldo atual é calculado.
+  * **Título:** Implementar agregação de saldo
+  * **Descrição:** criar o cálculo do saldo atual.
   * **Prioridade:** Alta
   * **Dependências:** F03.01.02
   * **Arquivos que provavelmente serão modificados:** `app/Services/Dashboard/*`, `app/Repositories/*`
@@ -84,8 +84,8 @@ KPI definidos.
   * **Definition of Done:** lógica de saldo pronta para implementação.
 
 * **ID:** F03.02.02
-  * **Título:** Definir agregação por período
-  * **Descrição:** documentar a base para evolução mensal e fluxo de caixa.
+  * **Título:** Implementar agregação por período
+  * **Descrição:** criar a base de consulta para evolução mensal e fluxo de caixa.
   * **Prioridade:** Alta
   * **Dependências:** F03.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Dashboard/*`
@@ -97,7 +97,7 @@ KPI definidos.
 
 ### Descrição
 
-Especificar a estrutura visual dos cards, gráficos e filtros.
+Implementar a estrutura visual dos cards, gráficos e filtros.
 
 ### Objetivo
 
@@ -109,19 +109,18 @@ Agregações definidas.
 
 ### Feature 3.3 — Layout e estados
 
-**Objetivo:** documentar o comportamento da UI do dashboard.  
+**Objetivo:** implementar o comportamento da UI do dashboard.  
 **Descrição:** organizar cards, loading, empty state e error state.  
 **Critérios de aceitação:** estados de interface previstos.
 
 #### Tasks
 
 * **ID:** F03.03.01
-  * **Título:** Definir estados do dashboard
-  * **Descrição:** documentar loading, vazio, erro e sucesso.
+  * **Título:** Implementar estados do dashboard
+  * **Descrição:** criar loading, vazio, erro e sucesso.
   * **Prioridade:** Média
   * **Dependências:** F03.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`, `src/features/dashboard/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** comportamento visual especificado.
   * **Definition of Done:** estados bem definidos para o frontend.
-

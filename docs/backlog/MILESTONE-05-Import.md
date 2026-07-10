@@ -14,7 +14,7 @@ Implementar a importação de CSV como pipeline seguro, rastreável e idempotent
 
 ### Descrição
 
-Criar o fluxo de envio e verificação do arquivo importado.
+Implementar o fluxo de envio e verificação do arquivo importado.
 
 ### Objetivo
 
@@ -33,8 +33,8 @@ Transações e autenticação.
 #### Tasks
 
 * **ID:** F05.01.01
-  * **Título:** Definir contrato de upload CSV
-  * **Descrição:** documentar restrições de formato, tamanho e campos.
+  * **Título:** Implementar contrato de upload CSV
+  * **Descrição:** criar restrições de formato, tamanho e campos.
   * **Prioridade:** Alta
   * **Dependências:** F04.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Requests/*`, `ARCHITECTURE.md`
@@ -65,8 +65,8 @@ Upload validado.
 #### Tasks
 
 * **ID:** F05.02.01
-  * **Título:** Definir mapeamento de colunas CSV
-  * **Descrição:** documentar como cada coluna será interpretada.
+  * **Título:** Implementar mapeamento de colunas CSV
+  * **Descrição:** criar como cada coluna será interpretada.
   * **Prioridade:** Alta
   * **Dependências:** F05.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Import/*`
@@ -75,8 +75,8 @@ Upload validado.
   * **Definition of Done:** contrato de parser pronto.
 
 * **ID:** F05.02.02
-  * **Título:** Definir normalização de valores
-  * **Descrição:** documentar tratamento de datas, moedas, descrições e sinais.
+  * **Título:** Implementar normalização de valores
+  * **Descrição:** criar tratamento de datas, moedas, descrições e sinais.
   * **Prioridade:** Alta
   * **Dependências:** F05.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Import/*`, `app/Utils/*`
@@ -100,15 +100,15 @@ Parser e normalização.
 
 ### Feature 5.3 — Lote de importação
 
-**Objetivo:** documentar persistência do batch importado.  
+**Objetivo:** implementar persistência do batch importado.  
 **Descrição:** estruturar lote, itens e vínculo com transações.  
 **Critérios de aceitação:** rastreabilidade definida.
 
 #### Tasks
 
 * **ID:** F05.03.01
-  * **Título:** Definir modelo de lote de importação
-  * **Descrição:** documentar o relacionamento entre lote e itens importados.
+  * **Título:** Implementar modelo de lote de importação
+  * **Descrição:** criar o relacionamento entre lote e itens importados.
   * **Prioridade:** Alta
   * **Dependências:** F05.02.02
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -117,12 +117,11 @@ Parser e normalização.
   * **Definition of Done:** rastreabilidade do batch formalizada.
 
 * **ID:** F05.03.02
-  * **Título:** Definir estratégia de deduplicação
-  * **Descrição:** documentar como evitar importação repetida.
+  * **Título:** Implementar estratégia de deduplicação
+  * **Descrição:** criar como evitar importação repetida.
   * **Prioridade:** Alta
   * **Dependências:** F05.03.01
   * **Arquivos que provavelmente serão modificados:** `app/Repositories/*`, `app/Services/Import/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** estratégia de idempotência descrita.
   * **Definition of Done:** risco de duplicidade tratado no desenho.
-

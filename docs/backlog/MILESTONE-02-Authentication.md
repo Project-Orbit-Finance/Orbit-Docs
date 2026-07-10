@@ -31,8 +31,8 @@ Foundation.
 #### Tasks
 
 * **ID:** F02.01.01
-  * **Título:** Definir request de cadastro
-  * **Descrição:** estruturar validações mínimas de nome, e-mail e senha.
+  * **Título:** Implementar request de cadastro
+  * **Descrição:** criar a classe de request com validações mínimas de nome, e-mail e senha.
   * **Prioridade:** Alta
   * **Status:** Concluída
   * **Dependências:** F01.03.02
@@ -42,10 +42,10 @@ Foundation.
   * **Definition of Done:** validações documentadas e prontas para uso.
 
 * **ID:** F02.01.02
-  * **Título:** Criar service de cadastro
-  * **Descrição:** registrar usuário e aplicar regras de criação.
+  * **Título:** Implementar service de cadastro
+  * **Descrição:** criar o service responsável por registrar usuário e aplicar regras de criação.
   * **Prioridade:** Alta
-  * **Status:** Concluída
+  * **Status:** Pendente
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Auth/*`, `app/Repositories/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -61,10 +61,10 @@ Foundation.
 #### Tasks
 
 * **ID:** F02.02.01
-  * **Título:** Definir endpoint de login
-  * **Descrição:** estruturar request e response do login.
+  * **Título:** Implementar endpoint de login
+  * **Descrição:** criar request, controller e fluxo de autenticação do login.
   * **Prioridade:** Alta
-  * **Status:** Concluída
+  * **Status:** Pendente
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`, `app/Http/Requests/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -72,10 +72,10 @@ Foundation.
   * **Definition of Done:** fluxo especificado para implementação.
 
 * **ID:** F02.02.02
-  * **Título:** Definir endpoint de logout
-  * **Descrição:** estruturar invalidação de sessão e limpeza de cookie.
+  * **Título:** Implementar endpoint de logout
+  * **Descrição:** criar o endpoint responsável por invalidar a sessão e limpar o cookie.
   * **Prioridade:** Alta
-  * **Status:** Concluída
+  * **Status:** Pendente
   * **Dependências:** F02.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -105,10 +105,10 @@ Login e logout.
 #### Tasks
 
 * **ID:** F02.03.01
-  * **Título:** Definir fluxo de refresh
-  * **Descrição:** documentar renovação de access token via cookie HttpOnly.
+  * **Título:** Implementar fluxo de refresh
+  * **Descrição:** criar a renovação de access token via cookie HttpOnly.
   * **Prioridade:** Alta
-  * **Status:** Concluída
+  * **Status:** Pendente
   * **Dependências:** F02.02.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`, `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ADR-001.md`
@@ -124,10 +124,10 @@ Login e logout.
 #### Tasks
 
 * **ID:** F02.04.01
-  * **Título:** Definir fluxo de solicitação de reset
-  * **Descrição:** estruturar request para solicitação de recuperação.
+  * **Título:** Implementar solicitação de reset
+  * **Descrição:** criar request e endpoint para solicitação de recuperação.
   * **Prioridade:** Alta
-  * **Status:** Concluída
+  * **Status:** Pendente
   * **Dependências:** F02.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Requests/*`, `app/Http/Controllers/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
@@ -135,10 +135,10 @@ Login e logout.
   * **Definition of Done:** etapa inicial do reset documentada.
 
 * **ID:** F02.04.02
-  * **Título:** Definir fluxo de redefinição
-  * **Descrição:** documentar validação do token e atualização da senha.
+  * **Título:** Implementar redefinição de senha
+  * **Descrição:** criar a validação do token e a atualização final da senha.
   * **Prioridade:** Alta
-  * **Status:** Concluída
+  * **Status:** Pendente
   * **Dependências:** F02.04.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Auth/*`, `app/Services/Auth/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`

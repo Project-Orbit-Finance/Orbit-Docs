@@ -12,7 +12,7 @@ Implementar o simulador financeiro com módulos independentes por investimento.
 
 ### Descrição
 
-Definir a arquitetura dos cálculos financeiros.
+Implementar a arquitetura dos cálculos financeiros.
 
 ### Objetivo
 
@@ -25,14 +25,14 @@ Foundation.
 ### Feature 7.1 — Base de cálculo
 
 **Objetivo:** formalizar a regra de cálculo desacoplada da UI.  
-**Descrição:** definir entradas, saídas e contratos dos módulos.  
+**Descrição:** implementar entradas, saídas e contratos dos módulos.  
 **Critérios de aceitação:** arquitetura do simulador estabelecida.
 
 #### Tasks
 
 * **ID:** F07.01.01
-  * **Título:** Definir contrato do simulador
-  * **Descrição:** documentar entradas, saídas e parâmetros gerais.
+  * **Título:** Implementar contrato do simulador
+  * **Descrição:** criar entradas, saídas e parâmetros gerais.
   * **Prioridade:** Alta
   * **Dependências:** F01.03.02
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -43,14 +43,14 @@ Foundation.
 ### Feature 7.2 — Módulos por investimento
 
 **Objetivo:** separar CDI, Selic, LCI e LCA em módulos próprios.  
-**Descrição:** documentar responsabilidades de cada cálculo.  
+**Descrição:** implementar responsabilidades de cada cálculo.  
 **Critérios de aceitação:** cada investimento possui fronteira própria.
 
 #### Tasks
 
 * **ID:** F07.02.01
-  * **Título:** Definir módulo CDI
-  * **Descrição:** documentar parâmetros e saída do cálculo CDI.
+  * **Título:** Implementar módulo CDI
+  * **Descrição:** criar os parâmetros e a saída do cálculo CDI.
   * **Prioridade:** Média
   * **Dependências:** F07.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Investments/CDI/*`
@@ -59,8 +59,8 @@ Foundation.
   * **Definition of Done:** especificação pronta para implementação.
 
 * **ID:** F07.02.02
-  * **Título:** Definir módulo Tesouro Selic
-  * **Descrição:** documentar parâmetros e saída do cálculo Selic.
+  * **Título:** Implementar módulo Tesouro Selic
+  * **Descrição:** criar os parâmetros e a saída do cálculo Selic.
   * **Prioridade:** Média
   * **Dependências:** F07.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Investments/Selic/*`
@@ -69,12 +69,11 @@ Foundation.
   * **Definition of Done:** especificação pronta para implementação.
 
 * **ID:** F07.02.03
-  * **Título:** Definir módulos LCI e LCA
-  * **Descrição:** documentar parâmetros e saídas dos cálculos de LCI e LCA.
+  * **Título:** Implementar módulos LCI e LCA
+  * **Descrição:** criar os parâmetros e as saídas dos cálculos de LCI e LCA.
   * **Prioridade:** Média
   * **Dependências:** F07.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Investments/LCI/*`, `app/Services/Investments/LCA/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** módulos separados definidos.
   * **Definition of Done:** fronteiras de cálculo consolidadas.
-

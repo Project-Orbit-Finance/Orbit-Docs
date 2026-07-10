@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Consolidar a estratégia de testes do Orbit e definir cobertura obrigatória para os módulos críticos.
+Consolidar a estratégia de testes do Orbit e implementar cobertura obrigatória para os módulos críticos.
 
 ## Dependências
 
@@ -19,7 +19,7 @@ Consolidar a estratégia de testes do Orbit e definir cobertura obrigatória par
 
 ### Descrição
 
-Definir a pirâmide de testes e os módulos críticos obrigatórios.
+Implementar a pirâmide de testes e os módulos críticos obrigatórios.
 
 ### Objetivo
 
@@ -31,15 +31,15 @@ Módulos centrais definidos.
 
 ### Feature 9.1 — Plano de cobertura
 
-**Objetivo:** definir o escopo mínimo de testes.  
+**Objetivo:** implementar o escopo mínimo de testes.  
 **Descrição:** mapear o que deve ser testado por tipo.  
 **Critérios de aceitação:** estratégia clara e acionável.
 
 #### Tasks
 
 * **ID:** F09.01.01
-  * **Título:** Definir matriz de testes obrigatórios
-  * **Descrição:** documentar módulos que exigem teste unitário, integração e contrato.
+  * **Título:** Implementar matriz de testes obrigatórios
+  * **Descrição:** criar a lista de módulos que exigem teste unitário, integração e contrato.
   * **Prioridade:** Alta
   * **Dependências:** F03.01.01, F04.01.01, F05.01.01, F06.01.01, F07.01.01, F08.02.01
   * **Arquivos que provavelmente serão modificados:** `docs/backlog/ROADMAP.md`, `ARCHITECTURE.md`
@@ -48,12 +48,11 @@ Módulos centrais definidos.
   * **Definition of Done:** plano de teste oficial consolidado.
 
 * **ID:** F09.01.02
-  * **Título:** Definir padrão de organização de testes
-  * **Descrição:** documentar onde cada tipo de teste deve residir.
+  * **Título:** Implementar padrão de organização de testes
+  * **Descrição:** criar onde cada tipo de teste deve residir.
   * **Prioridade:** Média
   * **Dependências:** F09.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
   * **Documentação relacionada:** `ENGINEERING.md`
   * **Critérios de aceitação:** estrutura de testes descrita.
   * **Definition of Done:** organização pronta para execução incremental.
-

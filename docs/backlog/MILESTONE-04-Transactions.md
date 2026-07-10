@@ -13,7 +13,7 @@ Implementar a base de gerenciamento de transações do Orbit, incluindo persist�
 
 ### Descrição
 
-Formalizar a entidade de transação e seus relacionamentos essenciais.
+Implementar a entidade de transação e seus relacionamentos essenciais.
 
 ### Objetivo
 
@@ -26,14 +26,14 @@ Autenticação e base técnica.
 ### Feature 4.1 — Estrutura do domínio
 
 **Objetivo:** detalhar atributos e relações da transação.  
-**Descrição:** definir campos, vínculos e regras base.  
+**Descrição:** implementar campos, vínculos e regras base.  
 **Critérios de aceitação:** contrato do domínio de transação documentado.
 
 #### Tasks
 
 * **ID:** F04.01.01
-  * **Título:** Definir contrato de transação
-  * **Descrição:** documentar campos obrigatórios, opcionais e deriváveis.
+  * **Título:** Implementar contrato de transação
+  * **Descrição:** criar os campos obrigatórios, opcionais e deriváveis.
   * **Prioridade:** Alta
   * **Dependências:** F01.03.02
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -42,8 +42,8 @@ Autenticação e base técnica.
   * **Definition of Done:** contrato suficiente para modelagem técnica.
 
 * **ID:** F04.01.02
-  * **Título:** Definir relacionamento com categoria e conta
-  * **Descrição:** explicitar como uma transação referencia conta e categoria.
+  * **Título:** Implementar relacionamento com categoria e conta
+  * **Descrição:** criar como uma transação referencia conta e categoria.
   * **Prioridade:** Alta
   * **Dependências:** F04.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -55,7 +55,7 @@ Autenticação e base técnica.
 
 ### Descrição
 
-Preparar os fluxos de listagem, criação, edição e exclusão lógica.
+Implementar os fluxos de listagem, criação, edição e exclusão lógica.
 
 ### Objetivo
 
@@ -74,8 +74,8 @@ Modelo de transações.
 #### Tasks
 
 * **ID:** F04.02.01
-  * **Título:** Definir contrato de listagem
-  * **Descrição:** documentar filtros, paginação e ordenação.
+  * **Título:** Implementar contrato de listagem
+  * **Descrição:** criar filtros, paginação e ordenação da listagem.
   * **Prioridade:** Alta
   * **Dependências:** F04.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Controllers/Transaction/*`, `app/Repositories/*`
@@ -84,8 +84,8 @@ Modelo de transações.
   * **Definition of Done:** contrato de consulta pronto.
 
 * **ID:** F04.02.02
-  * **Título:** Definir contrato de criação e edição
-  * **Descrição:** documentar payloads de criação e atualização.
+  * **Título:** Implementar contrato de criação e edição
+  * **Descrição:** criar os payloads de criação e atualização.
   * **Prioridade:** Alta
   * **Dependências:** F04.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Http/Requests/*`, `app/Services/Transaction/*`
@@ -109,19 +109,18 @@ CRUD de transações.
 
 ### Feature 4.3 — Edição de categoria
 
-**Objetivo:** documentar a atualização manual de categorias.  
+**Objetivo:** implementar a atualização manual de categorias.  
 **Descrição:** registrar regra personalizada a partir da edição.  
 **Critérios de aceitação:** correção manual gera efeito persistente.
 
 #### Tasks
 
 * **ID:** F04.03.01
-  * **Título:** Definir fluxo de correção manual
-  * **Descrição:** documentar como a alteração de categoria cria nova regra.
+  * **Título:** Implementar fluxo de correção manual
+  * **Descrição:** criar como a alteração de categoria gera nova regra.
   * **Prioridade:** Alta
   * **Dependências:** F04.02.02
   * **Arquivos que provavelmente serão modificados:** `app/Services/Categorization/*`, `app/Repositories/*`
   * **Documentação relacionada:** `ADR-001.md`, `ARCHITECTURE.md`
   * **Critérios de aceitação:** reaprendizado personalizado descrito.
   * **Definition of Done:** regra de retroalimentação documentada.
-

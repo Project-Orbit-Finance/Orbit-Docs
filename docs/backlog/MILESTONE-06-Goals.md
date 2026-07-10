@@ -14,7 +14,7 @@ Implementar o gerenciamento de metas financeiras com cálculo de progresso e pro
 
 ### Descrição
 
-Formalizar as entidades responsáveis por objetivos financeiros.
+Implementar as entidades responsáveis por objetivos financeiros.
 
 ### Objetivo
 
@@ -26,15 +26,15 @@ Transações.
 
 ### Feature 6.1 — Estrutura da meta
 
-**Objetivo:** definir os dados da meta e suas relações.  
-**Descrição:** documentar valor, prazo, progresso e status.  
+**Objetivo:** implementar os dados da meta e suas relações.  
+**Descrição:** criar valor, prazo, progresso e status.  
 **Critérios de aceitação:** modelo definido.
 
 #### Tasks
 
 * **ID:** F06.01.01
-  * **Título:** Definir contrato de meta
-  * **Descrição:** documentar atributos essenciais e opcionais.
+  * **Título:** Implementar contrato de meta
+  * **Descrição:** criar os atributos essenciais e opcionais.
   * **Prioridade:** Alta
   * **Dependências:** F04.01.01
   * **Arquivos que provavelmente serão modificados:** `ARCHITECTURE.md`
@@ -65,8 +65,8 @@ Modelo de metas.
 #### Tasks
 
 * **ID:** F06.02.01
-  * **Título:** Definir cálculo de progresso
-  * **Descrição:** documentar percentual concluído e saldo faltante.
+  * **Título:** Implementar cálculo de progresso
+  * **Descrição:** criar o percentual concluído e o saldo faltante.
   * **Prioridade:** Alta
   * **Dependências:** F06.01.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Goals/*`, `app/Utils/*`
@@ -75,12 +75,11 @@ Modelo de metas.
   * **Definition of Done:** cálculo pronto para teste unitário.
 
 * **ID:** F06.02.02
-  * **Título:** Definir projeção de conclusão
-  * **Descrição:** documentar previsão com base em aportes e prazo.
+  * **Título:** Implementar projeção de conclusão
+  * **Descrição:** criar a previsão com base em aportes e prazo.
   * **Prioridade:** Média
   * **Dependências:** F06.02.01
   * **Arquivos que provavelmente serão modificados:** `app/Services/Goals/*`
   * **Documentação relacionada:** `ARCHITECTURE.md`
   * **Critérios de aceitação:** projeção descrita sem ambiguidade.
   * **Definition of Done:** fórmula documentada para implementação.
-
